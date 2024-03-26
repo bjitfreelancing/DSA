@@ -19,4 +19,8 @@ if __name__ == "__main__":
     flag = sort.sort_problem1()
     print(f"Return value from function: {flag}")
 
+## Complexity analysis
+## S = 1+2+3....+n-1
+## S = n-1+n-2+......+3+2+1
+## 2S = n+n+......+n=n*n
         
