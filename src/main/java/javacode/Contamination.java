@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class Contamination {
     static Map<Integer, Set<Integer>> contaminatedMap = new HashMap<>();
-    private final static int[] positions = { 1, 3, 5, 9, 14 };
-    private final static int safeDistance = 5;
+    private static int[] positions = { 1, 3, 5, 9, 14, 15, 17, 20, 21, 24, 25, 26 };
+    private static int safeDistance = 12;
     private static int minIndex;
     private static int maxIndex;
     private static int minVal = positions.length + 1;
@@ -67,10 +67,10 @@ public class Contamination {
                 maxIndex = positions[i];
             }
         }
-        System.out.println("best case when infected person is at position "+ maxIndex + " : " +
+        System.out.println("worst case when infected person is at position "+ maxIndex + " : " +
                 "will infect :"+ contaminatedMap.get(maxIndex).size() + " people, " +
                 "they are at positions : "+contaminatedMap.get(maxIndex));
-        System.out.println("worst case when infected person is at position "+ minIndex + " : " +
+        System.out.println("best case when infected person is at position "+ minIndex + " : " +
                 "will infect :"+ contaminatedMap.get(minIndex).size() + " people, " +
                 "they are at positions : "+contaminatedMap.get(minIndex));
     }
