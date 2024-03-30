@@ -8,7 +8,7 @@ import java.util.Set;
 public class Contamination {
     static Map<Integer, Set<Integer>> contaminatedMap = new HashMap<>();
     private static int[] positions = { 1, 3, 5, 9, 14, 15, 17, 20, 21, 24, 25, 26 };
-    private static int safeDistance = 12;
+    private static int safeDistance = 6;
     private static int minIndex;
     private static int maxIndex;
     private static int minVal = positions.length + 1;
