@@ -1,0 +1,4 @@
+prod1, usd, us, b1
+prod1, usd, *, b2
+prod1, *, us, b3
+prod1, *, ca, b4
